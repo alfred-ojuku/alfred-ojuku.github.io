@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") || "dark";
+    </script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -25,6 +29,7 @@
         <nav class="desktop-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
+          <a href="dashboards/">Dashboards</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
@@ -76,8 +81,8 @@
         hidden
       >
         <a href="#about">About</a><a href="#projects">Projects</a
-        ><a href="#experience">Experience</a><a href="#skills">Skills</a
-        ><a href="#contact">Contact</a>
+        ><a href="dashboards/">Dashboards</a><a href="#experience">Experience</a
+        ><a href="#skills">Skills</a><a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -352,6 +357,37 @@
                 </div>
               </div>
             </article>
+          </div>
+        </section>
+
+        <section class="content-section" id="dashboards">
+          <div class="section-heading">
+            <span class="eyebrow">Business intelligence</span>
+            <h2>Power BI Dashboards</h2>
+            <p>
+              Interactive dashboards that operational and business data into
+              clear, actionable insights.
+            </p>
+          </div>
+
+          <div class="dashboard-placeholder">
+            <div class="dashboard-preview" aria-hidden="true">
+              <span class="preview-bar preview-bar-one"></span>
+              <span class="preview-bar preview-bar-two"></span>
+              <span class="preview-bar preview-bar-three"></span>
+              <span class="preview-line"></span>
+            </div>
+            <div class="dashboard-message">
+              <span class="coming-soon-label">Coming soon</span>
+              <h3>Interactive dashboards are on the way.</h3>
+              <p>
+                I’ll be adding selected Power BI reports here for you to explore
+                directly from the portfolio.
+              </p>
+              <a class="dashboard-button" href="dashboards/"
+                >Visit dashboards <span aria-hidden="true">→</span></a
+              >
+            </div>
           </div>
         </section>
 

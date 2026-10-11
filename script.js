@@ -6,7 +6,7 @@ const backToTop = document.querySelector('#back-to-top');
 const navLinks = document.querySelectorAll('.desktop-nav a');
 
 const savedTheme = localStorage.getItem('theme');
-if (savedTheme) root.dataset.theme = savedTheme;
+root.dataset.theme = savedTheme || 'dark';
 
 function updateThemeLabel() {
   const dark = root.dataset.theme === 'dark';
