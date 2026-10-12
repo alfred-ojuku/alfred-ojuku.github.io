@@ -26,10 +26,7 @@
   <body>
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#about">
-          <img src="assets/personal/ao-logo.svg" alt="" width="34" height="34" />
-          <span>Alfred Ojuku</span>
-        </a>
+        <a class="brand" href="#about"> </a>
         <nav class="desktop-nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
@@ -216,6 +213,41 @@
             <p>A few things I’ve designed, built, or contributed to.</p>
           </div>
           <div class="project-list">
+            <article class="project-card">
+              <div class="project-visual visual-one">
+                <img
+                  src="assets/projects/roamcore.png"
+                  alt="RoamCore"
+                  onerror="
+                    this.hidden = true;
+                    this.nextElementSibling.hidden = false;
+                  "
+                />
+                <span hidden>01</span>
+              </div>
+              <div class="project-body">
+                <p class="project-meta">Roamcore · React, FastAPI</p>
+                <h3>RoamCore</h3>
+                <p>
+                  Roam's internal web application that supports different
+                  business functions e.g aftersales, charging and rental,
+                  inventory management, sales and manufacturing.
+                </p>
+                <ul class="tag-list">
+                  <li>React</li>
+                  <li>FastAPI</li>
+                  <li>Cloud Run</li>
+                </ul>
+                <div class="project-links">
+                  <a
+                    href="https://roamcore.roam-electric.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >WebSite Link ↗</a
+                  >
+                </div>
+              </div>
+            </article>
             <article class="project-card">
               <div class="project-visual visual-one">
                 <img
@@ -489,6 +521,7 @@
                 <li>SQL &amp; databases (MySQL, Postgres)</li>
                 <li>RBAC</li>
                 <li>Google Cloud Platform</li>
+                <li>AL (Application Language)</li>
               </ul>
             </article>
             <article class="skill-card">
